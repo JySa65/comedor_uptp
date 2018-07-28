@@ -1,0 +1,68 @@
+@import "../../../node_modules/materialize-css/sass/materialize.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: -webkit-box !important;
+	background-image: url('../img/bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.opacity_back {
+	display: flex;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.90);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin: 0;
+}
+
+.padi-context{
+	margin-left: 320px;
+	margin-top: 75px;
+	width: 75%;
+
+	@media only screen and (max-width: 1300px) and (min-width: 993px) {
+		margin-left: 320px;
+		margin-top: 75px;
+		width: 69%;
+	}	
+
+	@media only screen and (max-width : 992px) {
+		margin-left: 15px;
+		margin-top: 65px;
+		width: 91%;
+	}
+	
+}
+
+.ast-input{
+	color:red;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type=number] {
+	-moz-appearance:textfield;
+}
+.picker__date-display, .picker__weekday-display{
+    background-color: #e51c23;
+}
+
+.picker__today { color: #f44336; }
+.picker__close { color: #f44336; }
+.picker__day--infocus:hover { color: #f57c00; }
+.picker--focused .picker__day--selected {
+    background-color: #e51c23;
+    color: #ffffff;
+}

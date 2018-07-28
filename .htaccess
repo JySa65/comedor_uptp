@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+	#regla de redireccion
+		RewriteRule ^$ public/ [L]
+		RewriteRule (.*) public/$1 [L]
+</IfModule>
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
